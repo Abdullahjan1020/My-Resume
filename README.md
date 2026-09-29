@@ -18,4 +18,4 @@ The page presents Abdullah Jan's profile, education, skills, projects, and conta
 
 ## How to Run
 
-Open `AbdullahJan527940.html` in any modern web browser.
+Open `AbdullahJan527940.html` in any modern web browser
