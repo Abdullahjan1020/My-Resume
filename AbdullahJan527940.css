@@ -1,3 +1,4 @@
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +10,44 @@ body {
   line-height: 1.6;
   color: #333;
   background: #f4f4f4;
-  padding: 20px;
+  padding: 20px 0;
 }
 
+/* ==========================================================================
+   12-COLUMN GRID SYSTEM (Lab 05 Concept)
+   ========================================================================== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* Column Width Calculations (100% / 12 * Column Number) */
+.col-1  { width: 8.33%;  padding: 0 15px; box-sizing: border-box; }
+.col-2  { width: 16.66%; padding: 0 15px; box-sizing: border-box; }
+.col-3  { width: 25.00%; padding: 0 15px; box-sizing: border-box; }
+.col-4  { width: 33.33%; padding: 0 15px; box-sizing: border-box; }
+.col-5  { width: 41.66%; padding: 0 15px; box-sizing: border-box; }
+.col-6  { width: 50.00%; padding: 0 15px; box-sizing: border-box; }
+.col-7  { width: 58.33%; padding: 0 15px; box-sizing: border-box; }
+.col-8  { width: 66.66%; padding: 0 15px; box-sizing: border-box; }
+.col-9  { width: 75.00%; padding: 0 15px; box-sizing: border-box; }
+.col-10 { width: 83.33%; padding: 0 15px; box-sizing: border-box; }
+.col-11 { width: 91.66%; padding: 0 15px; box-sizing: border-box; }
+.col-12 { width: 100.0%; padding: 0 15px; box-sizing: border-box; }
+
+/* Header & Typography */
 header {
   background: #2c3e50;
   color: white;
-  padding: 30px;
-  text-align: center;
+  padding: 25px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -27,8 +58,7 @@ header h1 {
 }
 
 header .contact-info {
-  font-size: 1rem;
-  margin-bottom: 5px;
+  font-size: 0.95rem;
   color: #ecf0f1;
 }
 
@@ -42,12 +72,8 @@ header .header-links a:hover {
   text-decoration: underline;
 }
 
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-section {
+/* Component Styling */
+.card {
   background: white;
   padding: 25px;
   margin-bottom: 20px;
@@ -55,20 +81,28 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.full-height {
+  height: calc(100% - 20px);
+}
+
 section h2 {
   color: #2c3e50;
   border-bottom: 2px solid #3498db;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+}
+
+.skill-category {
+  background: #f8f9fa;
+  padding: 10px 12px;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
 .item {
-  margin-bottom: 20px;
-}
-
-.item:last-child {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .item-header {
@@ -76,99 +110,90 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .item-header h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #2c3e50;
 }
 
 .date, .marks {
   font-weight: bold;
   color: #7f8c8d;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .tag {
   background: #eef7fc;
   color: #2980b9;
-  padding: 3px 8px;
+  padding: 2px 8px;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
 .sub-title {
   font-style: italic;
-  color: #555;
-  margin-bottom: 8px;
-}
-
-section ul {
-  padding-left: 20px;
-}
-
-section ul li {
+  color: #666;
+  font-size: 0.9rem;
   margin-bottom: 5px;
 }
 
-.skills ul {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+ul {
+  padding-left: 20px;
 }
 
-.skills li {
-  background: #f8f9fa;
-  color: #333;
-  padding: 10px 15px;
-  border-radius: 6px;
-  border-left: 4px solid #3498db;
+ul li {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
-  text-align: center;
-  padding: 15px;
+  padding: 15px 0;
   color: #777;
+  font-size: 0.9rem;
 }
 
-/* ---------- Responsive Design with Media Queries ---------- */
+/* ==========================================================================
+   MEDIA QUERIES (Responsive Breakpoints)
+   ========================================================================== */
 
-/* Tablets and below */
+/* Tablets and below (max-width: 768px) */
 @media screen and (max-width: 768px) {
+  .col-mobile-12 {
+    width: 100% !important;
+  }
+
   header h1 {
     font-size: 1.8rem;
   }
 
-  body {
-    padding: 10px;
-  }
-
-  section {
-    padding: 18px;
-  }
-
-  .item-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2px;
+  .full-height {
+    height: auto;
   }
 }
 
-/* Mobile phones */
+/* Mobile phones (max-width: 480px) */
 @media screen and (max-width: 480px) {
+  body {
+    padding: 10px 0;
+  }
+
   header {
-    padding: 20px 10px;
+    padding: 15px;
   }
 
   header h1 {
     font-size: 1.4rem;
   }
 
-  section h2 {
-    font-size: 1.2rem;
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

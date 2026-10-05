@@ -8,133 +8,179 @@
 </head>
 <body>
 
-  <header>
-    <h1>Abdullah Jan</h1>
-    <p class="contact-info">
-      Quetta, Balochistan, Pakistan | +92 331 7051188 
-    </p>
-    <p class="header-links">
-      <a href="https://www.linkedin.com/in/abdullah-jan-9405331b3/" target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/Abdullahjan1020" target="_blank">GitHub</a>
-    </p>
+  <!-- Header Section -->
+  <header class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Abdullah Jan</h1>
+        <p class="contact-info">
+          Quetta, Balochistan, Pakistan | +92 331 7051188
+        </p>
+        <p class="header-links">
+          <a href="https://www.linkedin.com/in/abdullah-jan-9405331b3/" target="_blank">LinkedIn</a> | 
+          <a href="https://github.com/Abdullahjan1020" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section class="summary">
-      <h2>Professional Summary</h2>
-      <p>
-        Computer Science undergraduate with hands-on experience across AI/ML, network security, and full-stack web development. 
-        Seeking a technical internship to apply strong programming fundamentals to real-world engineering problems.
-      </p>
-    </section>
-
-    <section class="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> Python, C++, JavaScript</li>
-        <li><strong>Web & CMS:</strong> HTML5, CSS3, Bootstrap, Responsive Design, WordPress, Elementor, Astra, WooCommerce, cPanel</li>
-        <li><strong>Security & Networking:</strong> TLS/SSL, OpenSSL, Certificate-Based Authentication, Wireshark</li>
-        <li><strong>Mobile:</strong> Flutter</li>
-        <li><strong>Concepts:</strong> Data Structures, Algorithms, OOP, Database Systems, Software Engineering</li>
-        <li><strong>Tools:</strong> Git, GitHub, Linux, Windows</li>
-      </ul>
-    </section>
-
-    <section class="experience">
-      <h2>Experience</h2>
-      <div class="item">
-        <div class="item-header">
-          <h3>Freelance Web Developer</h3>
-          <span class="date">2024 – Present</span>
-        </div>
-        <p class="sub-title">Self-Employed, Remote</p>
-        <ul>
-          <li>Developed and deployed WordPress e-commerce websites for multiple clients, from requirements gathering through launch.</li>
-          <li>Customized themes and site architecture to improve page load performance and mobile responsiveness.</li>
-          <li>Managed hosting, domain configuration, and payment gateway integration for client stores.</li>
-        </ul>
+  <main class="container">
+    <!-- Professional Summary -->
+    <section class="row card">
+      <div class="col-12">
+        <h2>Professional Summary</h2>
+        <p>
+          Computer Science undergraduate with hands-on experience across AI/ML, network security, and full-stack web development.
+          Seeking a technical internship to apply strong programming fundamentals to real-world engineering problems.
+        </p>
       </div>
     </section>
 
-    <section class="projects">
-      <h2>Technical Projects</h2>
-      
-      <div class="item">
-        <div class="item-header">
-          <h3>WattsEye AI-Powered Electricity Theft Detection</h3>
-          <span class="tag">AI / Anomaly Detection</span>
+    <!-- Technical Skills -->
+    <section class="row card">
+      <div class="col-12">
+        <h2>Technical Skills</h2>
+        <div class="row">
+          <div class="col-6 col-mobile-12">
+            <div class="skill-category">
+              <strong>Languages:</strong> Python, C++, JavaScript
+            </div>
+            <div class="skill-category">
+              <strong>Web & CMS:</strong> HTML5, CSS3, Bootstrap, Responsive Design, WordPress, Elementor, Astra, WooCommerce, cPanel
+            </div>
+            <div class="skill-category">
+              <strong>Security & Networking:</strong> TLS/SSL, OpenSSL, Certificate-Based Authentication, Wireshark
+            </div>
+          </div>
+          <div class="col-6 col-mobile-12">
+            <div class="skill-category">
+              <strong>Mobile:</strong> Flutter
+            </div>
+            <div class="skill-category">
+              <strong>Concepts:</strong> Data Structures, Algorithms, OOP, Database Systems, Software Engineering
+            </div>
+            <div class="skill-category">
+              <strong>Tools:</strong> Git, GitHub, Linux, Windows
+            </div>
+          </div>
         </div>
-        <ul>
-          <li>Built an anomaly detection system using the Isolation Forest algorithm, trained on 42 datasets containing over one million consumption records.</li>
-          <li>Applied unsupervised learning to flag abnormal electricity usage patterns indicative of theft.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>TLS Secure Client-Server Application</h3>
-          <span class="tag">Network Security</span>
-        </div>
-        <ul>
-          <li>Built a certificate-based authenticated client-server system with encrypted end-to-end communication.</li>
-          <li>Analyzed traffic using Wireshark to validate secure handshake and encryption integrity, applying core network-security and cryptography concepts.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>Expense Tracker - Desktop GUI Application</h3>
-          <span class="tag">Windows Forms</span>
-        </div>
-        <ul>
-          <li>Developed a desktop expense-tracking app with user login/registration and file-based data storage.</li>
-          <li>Implemented full CRUD functionality for adding, viewing, and managing expense records.</li>
-        </ul>
-      </div>
-
-      <div class="item">
-        <div class="item-header">
-          <h3>Patient Sphere Health Companion App</h3>
-          <span class="tag">Mobile Development</span>
-        </div>
-        <ul>
-          <li>Built a patient-centric mobile app to track vitals and store diagnoses, prescriptions, and appointments.</li>
-          <li>Designed an intuitive interface consolidating personal health records in one place.</li>
-        </ul>
       </div>
     </section>
 
-    <section class="education">
-      <h2>Education</h2>
-      
-      <div class="item">
-        <div class="item-header">
-          <h3>BS Computer Science</h3>
-          <span class="date">2023 – 2028 (Expected)</span>
-        </div>
-        <p>National University of Sciences & Technology (NUST), Balochistan Campus - 5th Semester</p>
+    <!-- Experience & Education Side-by-Side Grid Layout -->
+    <div class="row">
+      <!-- Experience Column -->
+      <div class="col-6 col-mobile-12">
+        <section class="card full-height">
+          <h2>Experience</h2>
+          <div class="item">
+            <div class="item-header">
+              <h3>Freelance Web Developer</h3>
+              <span class="date">2024 – Present</span>
+            </div>
+            <p class="sub-title">Self-Employed, Remote</p>
+            <ul>
+              <li>Developed and deployed WordPress e-commerce websites for clients from requirements gathering through launch.</li>
+              <li>Customized themes and site architecture to improve page load performance and mobile responsiveness.</li>
+              <li>Managed hosting, domain configuration, and payment gateway integration.</li>
+            </ul>
+          </div>
+        </section>
       </div>
 
-      <div class="item">
-        <div class="item-header">
-          <h3>Intermediate in Computer Science</h3>
-          <span class="marks">820 / 1100</span>
-        </div>
-        <p>Military College Sui, FBISE</p>
-      </div>
+      <!-- Education Column -->
+      <div class="col-6 col-mobile-12">
+        <section class="card full-height">
+          <h2>Education</h2>
+          
+          <div class="item">
+            <div class="item-header">
+              <h3>BS Computer Science</h3>
+              <span class="date">2023 – 2028 (Expected)</span>
+            </div>
+            <p>National University of Sciences & Technology (NUST), Balochistan Campus - 4th Semester</p>
+          </div>
 
-      <div class="item">
-        <div class="item-header">
-          <h3>Matriculation</h3>
-          <span class="marks">999 / 1100</span>
+          <div class="item">
+            <div class="item-header">
+              <h3>Intermediate in Computer Science</h3>
+              <span class="marks">820 / 1100</span>
+            </div>
+            <p>Military College Sui, FBISE</p>
+          </div>
+
+          <div class="item">
+            <div class="item-header">
+              <h3>Matriculation</h3>
+              <span class="marks">999 / 1100</span>
+            </div>
+            <p>Military College Sui, FBISE</p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Technical Projects -->
+    <section class="row card">
+      <div class="col-12">
+        <h2>Technical Projects</h2>
+        
+        <div class="row">
+          <div class="col-6 col-mobile-12 item">
+            <div class="item-header">
+              <h3>WattsEye AI-Powered Electricity Theft Detection</h3>
+              <span class="tag">AI / Anomaly Detection</span>
+            </div>
+            <ul>
+              <li>Built an anomaly detection system using Isolation Forest on 42 datasets with >1M records.</li>
+              <li>Applied unsupervised learning to flag abnormal consumption patterns indicative of theft.</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-mobile-12 item">
+            <div class="item-header">
+              <h3>TLS Secure Client-Server Application</h3>
+              <span class="tag">Network Security</span>
+            </div>
+            <ul>
+              <li>Built a certificate-authenticated client-server system with end-to-end encryption.</li>
+              <li>Analyzed traffic using Wireshark to validate secure handshake and cryptography integrity.</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-mobile-12 item">
+            <div class="item-header">
+              <h3>Expense Tracker - Desktop GUI App</h3>
+              <span class="tag">Windows Forms</span>
+            </div>
+            <ul>
+              <li>Developed a desktop app with user login/registration and file-based data storage.</li>
+              <li>Implemented full CRUD functionality for expense records.</li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-mobile-12 item">
+            <div class="item-header">
+              <h3>Patient Sphere Health Companion App</h3>
+              <span class="tag">Mobile Development</span>
+            </div>
+            <ul>
+              <li>Built a patient-centric mobile app to track vitals and store medical diagnoses.</li>
+              <li>Designed an intuitive interface consolidating personal health records in one place.</li>
+            </ul>
+          </div>
         </div>
-        <p>Military College Sui, FBISE</p>
+
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Abdullah Jan. All Rights Reserved.</p>
+  <footer class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>© 2026 Abdullah Jan. All Rights Reserved.</p>
+      </div>
+    </div>
   </footer>
 
 </body>
