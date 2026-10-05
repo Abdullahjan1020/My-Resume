@@ -22,7 +22,24 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+header .contact-info {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #ecf0f1;
+}
+
+header .header-links a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .header-links a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -32,7 +49,7 @@ main {
 
 section {
   background: white;
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -43,24 +60,73 @@ section h2 {
   border-bottom: 2px solid #3498db;
   padding-bottom: 5px;
   margin-bottom: 15px;
+  font-size: 1.4rem;
 }
 
 .item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.item-header h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.date, .marks {
+  font-weight: bold;
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+.tag {
+  background: #eef7fc;
+  color: #2980b9;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.sub-title {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  margin-bottom: 5px;
 }
 
 .skills ul {
   list-style: none;
+  padding-left: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
 }
 
 .skills li {
-  background: #3498db;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
+  background: #f8f9fa;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
 }
 
 footer {
@@ -74,7 +140,7 @@ footer {
 /* Tablets and below */
 @media screen and (max-width: 768px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   body {
@@ -82,29 +148,27 @@ footer {
   }
 
   section {
-    padding: 15px;
+    padding: 18px;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
   }
 }
 
 /* Mobile phones */
 @media screen and (max-width: 480px) {
   header {
-    padding: 20px;
+    padding: 20px 10px;
   }
 
   header h1 {
-    font-size: 1.2rem;
-  }
-
-  .skills ul {
-    flex-direction: column;
-  }
-
-  .skills li {
-    text-align: center;
+    font-size: 1.4rem;
   }
 
   section h2 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
